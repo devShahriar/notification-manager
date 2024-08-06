@@ -5,8 +5,8 @@ import (
 	"testing"
 
 	nt "github.com/Traders-Connect/esb-contract/golang/notification_manager"
-	"github.com/Traders-Connect/notification-manager/worker"
 	"github.com/Traders-Connect/utils"
+	"github.com/devshahriar/notification-manager/worker"
 )
 
 func TestSendTelegramNotification(t *testing.T) {

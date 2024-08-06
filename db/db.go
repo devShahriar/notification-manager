@@ -13,8 +13,8 @@ import (
 	"gorm.io/gorm"
 	gLog "gorm.io/gorm/logger"
 
-	"github.com/Traders-Connect/notification-manager/contract"
-	"github.com/Traders-Connect/notification-manager/model"
+	"github.com/devshahriar/notification-manager/contract"
+	"github.com/devshahriar/notification-manager/model"
 )
 
 type Mysql struct {

@@ -8,9 +8,9 @@ import (
 	"time"
 
 	nm "github.com/Traders-Connect/esb-contract/golang/notification_manager"
-	"github.com/Traders-Connect/notification-manager/contract"
-	"github.com/Traders-Connect/notification-manager/model"
 	"github.com/devShahriar/H"
+	"github.com/devshahriar/notification-manager/contract"
+	"github.com/devshahriar/notification-manager/model"
 )
 
 // This will return bot_token,message_template,channel_id etc

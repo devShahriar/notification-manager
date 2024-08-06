@@ -7,7 +7,7 @@ import (
 
 	"github.com/RichardKnop/machinery/v2/tasks"
 	nm "github.com/Traders-Connect/esb-contract/golang/notification_manager"
-	"github.com/Traders-Connect/notification-manager/contract"
+	"github.com/devshahriar/notification-manager/contract"
 )
 
 func (n *NotificationService) IntAddUserConfig(ctx context.Context, payload *nm.UserMetaReq) (*nm.IntAddUserConfigReply, error) {

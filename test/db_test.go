@@ -6,11 +6,11 @@ import (
 	"testing"
 
 	"github.com/Traders-Connect/esb-contract/golang/notification_manager"
-	"github.com/Traders-Connect/notification-manager/contract"
-	"github.com/Traders-Connect/notification-manager/db"
-	"github.com/Traders-Connect/notification-manager/model"
 	"github.com/Traders-Connect/utils"
 	"github.com/davecgh/go-spew/spew"
+	"github.com/devshahriar/notification-manager/contract"
+	"github.com/devshahriar/notification-manager/db"
+	"github.com/devshahriar/notification-manager/model"
 )
 
 func GetTestDB() db.DB {

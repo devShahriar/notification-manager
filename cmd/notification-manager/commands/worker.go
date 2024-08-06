@@ -3,8 +3,8 @@ package commands
 import (
 	"log"
 
-	"github.com/Traders-Connect/notification-manager/contract"
 	"github.com/Traders-Connect/utils"
+	"github.com/devshahriar/notification-manager/contract"
 	"github.com/spf13/cobra"
 )
 

@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	machineryConf "github.com/RichardKnop/machinery/v2/config"
-	"github.com/Traders-Connect/notification-manager/contract"
+	"github.com/devshahriar/notification-manager/contract"
 	"github.com/sirupsen/logrus"
 )
 

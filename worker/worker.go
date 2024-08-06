@@ -9,7 +9,7 @@ import (
 	"github.com/RichardKnop/machinery/v2/config"
 	machineryConf "github.com/RichardKnop/machinery/v2/config"
 	lock "github.com/RichardKnop/machinery/v2/locks/eager"
-	"github.com/Traders-Connect/notification-manager/db"
+	"github.com/devshahriar/notification-manager/db"
 	log "github.com/sirupsen/logrus"
 	"go.uber.org/zap"
 )

@@ -7,10 +7,10 @@ import (
 	"strings"
 
 	"github.com/Traders-Connect/esb-contract/golang/notification_manager"
-	"github.com/Traders-Connect/notification-manager/contract"
-	"github.com/Traders-Connect/notification-manager/model"
-	"github.com/Traders-Connect/notification-manager/template"
 	"github.com/devShahriar/H"
+	"github.com/devshahriar/notification-manager/contract"
+	"github.com/devshahriar/notification-manager/model"
+	"github.com/devshahriar/notification-manager/template"
 	"github.com/mailgun/mailgun-go/v4"
 	"github.com/sirupsen/logrus"
 )

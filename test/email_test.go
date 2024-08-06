@@ -3,8 +3,8 @@ package test
 import (
 	"testing"
 
-	"github.com/Traders-Connect/notification-manager/worker"
 	"github.com/Traders-Connect/utils"
+	"github.com/devshahriar/notification-manager/worker"
 )
 
 func TestEmail(t *testing.T) {

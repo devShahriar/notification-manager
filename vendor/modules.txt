@@ -185,12 +185,6 @@ github.com/hashicorp/go-multierror
 # github.com/inconshreveable/mousetrap v1.1.0
 ## explicit; go 1.18
 github.com/inconshreveable/mousetrap
-# github.com/jackc/pgpassfile v1.0.0
-## explicit; go 1.12
-# github.com/jackc/pgservicefile v0.0.0-20221227161230-091c0ba34f0a
-## explicit; go 1.14
-# github.com/jackc/pgx/v5 v5.4.3
-## explicit; go 1.19
 # github.com/jinzhu/inflection v1.0.0
 ## explicit
 github.com/jinzhu/inflection
@@ -213,6 +207,8 @@ github.com/klauspost/compress/huff0
 github.com/klauspost/compress/snappy
 github.com/klauspost/compress/zstd
 github.com/klauspost/compress/zstd/internal/xxhash
+# github.com/kr/pretty v0.3.0
+## explicit; go 1.12
 # github.com/labstack/echo/v4 v4.9.0
 ## explicit; go 1.17
 github.com/labstack/echo/v4
@@ -554,6 +550,8 @@ google.golang.org/protobuf/types/known/emptypb
 google.golang.org/protobuf/types/known/fieldmaskpb
 google.golang.org/protobuf/types/known/timestamppb
 google.golang.org/protobuf/types/known/wrapperspb
+# gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c
+## explicit; go 1.11
 # gopkg.in/telegram-bot-api.v4 v4.6.4
 ## explicit
 gopkg.in/telegram-bot-api.v4

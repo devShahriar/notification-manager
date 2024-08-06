@@ -6,11 +6,11 @@ import (
 	"log"
 	"strings"
 
-	"github.com/Traders-Connect/notification-manager/contract"
-	"github.com/Traders-Connect/notification-manager/model"
-	"github.com/Traders-Connect/notification-manager/template"
 	"github.com/bwmarrin/discordgo"
 	"github.com/devShahriar/H"
+	"github.com/devshahriar/notification-manager/contract"
+	"github.com/devshahriar/notification-manager/model"
+	"github.com/devshahriar/notification-manager/template"
 	"gorm.io/datatypes"
 )
 

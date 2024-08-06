@@ -7,10 +7,10 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/Traders-Connect/notification-manager/contract"
-	"github.com/Traders-Connect/notification-manager/db"
-	"github.com/Traders-Connect/notification-manager/worker"
 	"github.com/Traders-Connect/utils"
+	"github.com/devshahriar/notification-manager/contract"
+	"github.com/devshahriar/notification-manager/db"
+	"github.com/devshahriar/notification-manager/worker"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 )

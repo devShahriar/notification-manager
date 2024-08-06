@@ -6,7 +6,7 @@ import (
 	amqpBroker "github.com/RichardKnop/machinery/v2/brokers/amqp"
 	"github.com/RichardKnop/machinery/v2/config"
 	lock "github.com/RichardKnop/machinery/v2/locks/eager"
-	"github.com/Traders-Connect/notification-manager/contract"
+	"github.com/devshahriar/notification-manager/contract"
 	"github.com/sirupsen/logrus"
 )
 

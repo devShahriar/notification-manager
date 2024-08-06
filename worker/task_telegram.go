@@ -6,10 +6,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Traders-Connect/notification-manager/contract"
-	"github.com/Traders-Connect/notification-manager/model"
-	"github.com/Traders-Connect/notification-manager/template"
 	"github.com/devShahriar/H"
+	"github.com/devshahriar/notification-manager/contract"
+	"github.com/devshahriar/notification-manager/model"
+	"github.com/devshahriar/notification-manager/template"
 	tgbotapi "gopkg.in/telegram-bot-api.v4"
 	"gorm.io/datatypes"
 )

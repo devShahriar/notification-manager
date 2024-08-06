@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/Traders-Connect/notification-manager/template"
+	"github.com/devshahriar/notification-manager/template"
 )
 
 func TestTemplateEngine(t *testing.T) {

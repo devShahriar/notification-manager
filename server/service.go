@@ -11,8 +11,8 @@ import (
 	"go.uber.org/zap"
 	"google.golang.org/grpc/health/grpc_health_v1"
 
-	"github.com/Traders-Connect/notification-manager/contract"
-	"github.com/Traders-Connect/notification-manager/db"
+	"github.com/devshahriar/notification-manager/contract"
+	"github.com/devshahriar/notification-manager/db"
 	"google.golang.org/grpc/reflection"
 )
 
