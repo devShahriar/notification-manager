@@ -1,0 +1,8 @@
+{
+    "account_id": "028501bf-d86b-40e6-8a18-4c5e20a7d34c",
+    "event_type": "ADD_ACCOUNT",
+    "data": {
+        "ACCOUNT_NUMBER": "51224690",
+        "ACCOUNT_NAME": "IC Test"
+    }
+}

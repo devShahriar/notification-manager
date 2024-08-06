@@ -1,0 +1,37 @@
+{
+    "user_id": "3f2ce7f0-8e4a-4945-a514-a442e0bb2afd",
+    "block_list": [
+        {
+            "account_id": "00004",
+            "account_name": "nikname",
+            "account_config_id": "13"
+        },
+        {
+            "account_id": "05",
+            "account_name": "kio",
+            "account_config_id": "14"
+        }
+    ],
+    "unblock_list": [
+        {
+            "account_id": "18",
+            "account_name": "bc",
+            "account_config_id": "18"
+        },
+        {
+            "account_id": "17",
+            "account_name": "pagol",
+            "account_config_id": "17"
+        }
+    ],
+    "notification_config": {
+        "event_type": "TRADE_COPY_FAILURE",
+        "notification_type": "email",
+        "enabled": false,
+        "message_template": "Your",
+        "subject": "Trade",
+        "user_config": "2",
+        "user_id": "",
+        "notification_config_id": "24"
+    }
+}

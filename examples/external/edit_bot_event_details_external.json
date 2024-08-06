@@ -1,0 +1,49 @@
+{
+    "account_block_list": [
+        {
+            "account_id": "12345",
+            "account_name": "shahriar",
+            "account_config_id": "14"
+        }
+       
+    ],
+    "account_enabled_list": [
+        {
+            "account_id": "00004",
+            "account_name": "nikname",
+            "account_config_id": "15"
+        }
+    ],
+    "channel_block_list": [
+    ],
+    "channel_enabled_list": [
+        {
+            "channel_config_id": "2",
+            "channel_name": "tg test 2 "
+        },
+        {
+            "channel_config_id": "4",
+            "channel_name": "aas"
+        },
+        {
+            "channel_config_id": "7",
+            "channel_name": "kkll"
+        },
+        {
+            "channel_config_id": "8",
+            "channel_name": "89898"
+        }
+    ],
+    "user_id": "",
+    "notification_config": {
+        "user_id": "",
+        "event_type": "ACCOUNT_DISABLED",
+        "notification_type": "telegram",
+        "enabled": false,
+        "message_template": "<p>Hi %FIRST_NAME%,</p><p>Your trading account %ACCOUNT_NUMBER% has been successfully disabled.</p>",
+        "subject": "Trading account disabled",
+        "user_config": "0",
+        "notification_config_id": "27"
+    },
+    "bot_config_id": 1
+}

@@ -1,0 +1,10 @@
+apiVersion: "soluto.com/v1alpha2"
+kind: KamusSecret
+metadata:
+  name: machinery-notification
+  namespace: {{ .Release.Namespace }}
+type: Opaque
+stringData:
+  resultBackend: CiQASc1ayhZnIEulweMb00MjF6YxdrkkqX5Y7x+cY5oGFNGWO8ISeip4ChQKDE0PCGJXNT0XtUYRjBDTrcffCBJHCj9YMmiwC/HtwjGuLn4PN3PiVBcAen2KRwIMyHTKTAce4eIU4PDekVG0Dog4UJYilW4OW6BRR7febzC71FwziFgQks6PoQoaFwoQzuO+bblegdi5JB+NGe7zDRDCx64V
+  brokerURI: CiQASc1aypFJ7lf3wZU3l/E37/y7g90K4Qjwqc+wbzB+QshAUyoSiwEqiAEKFAoM2wwHPX/3qGsm002rEJDzs/0EElYKTscE7qEQ1uKuutDl6nYGidQLa/o01zJ0SLwTCXshiDWGutyWXuK6Q9qs+a85ZYObA7GMXv+depmoQLNqP8MUlFPVoU+W+wyHCIr9df6G1xCMluK/DhoYChDNq0+ZlqSM2W6qgnnod9p6EJjp8uQO
+serviceAccount: kamus

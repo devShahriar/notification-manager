@@ -1,0 +1,9 @@
+apiVersion: "soluto.com/v1alpha2"
+kind: KamusSecret
+metadata:
+  name: mailgun
+  namespace: {{ .Release.Namespace }}
+type: Opaque
+stringData:
+  apiKey: CiQASc1aynafmV8uFHsVWCCx7hfpyRVZr2fs2KiSLKJ4KcGvObcSdip0ChQKDOG5m2YZr56YG+/uWBDkm6GZBxJCCjpUH9Lwmk8uSSJBceKsC4zQT7WiKstWYhdn8ivuvaLJ435G+/wKTJBXzQsMHsZc3NBLC82b3j/uGYyjEP3k//MHGhgKEL6KXbE3idyPlcP7nSvqEQkQ9/u7lg4=
+serviceAccount: kamus

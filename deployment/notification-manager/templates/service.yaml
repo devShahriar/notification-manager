@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "notification-manager.fullname" . }}-grpc
+  labels:
+    {{- include "notification-manager-grpc.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: {{ .Values.service.port }}
+      protocol: TCP
+      name: grpc
+    - port: {{ .Values.service.portInt }}
+      targetPort: {{ .Values.service.portInt }}
+      protocol: TCP
+      name: grpc-int
+    - port: {{ .Values.service.metricsPort }}
+      targetPort: {{ .Values.service.metricsPort }}
+      protocol: TCP
+      name: metrics
+  selector:
+    {{- include "notification-manager-grpc.selectorLabels" . | nindent 4 }}

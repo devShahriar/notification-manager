@@ -1,0 +1,7 @@
+{
+    "user_id": "3f2ce7f0-8e4a-4945-a514-a442e0bb2afd",
+    "event_type": "ACCOUNT_ADDED",
+    "notification_type": "email",
+    "message_template": "Hi %FIRST_NAME%,\nYour trading account %ACCOUNT_NUMBER% has been successfully added to Traders Connect with the name %ACCOUNT_NAME%.",
+    "subject": "successfully Account added"
+}

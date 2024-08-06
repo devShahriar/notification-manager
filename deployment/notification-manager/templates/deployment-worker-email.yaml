@@ -1,0 +1,91 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "notification-manager.fullname" . }}-worker-email
+  labels:
+    {{- include "notification-manager-worker-email.labels" . | nindent 4 }}
+spec:
+  {{- if not .Values.autoscaling.enabled }}
+  replicas: {{ .Values.replicaCount }}
+  {{- end }}
+  selector:
+    matchLabels:
+      {{- include "notification-manager-worker-email.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      {{- with .Values.podAnnotations }}
+      annotations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      labels:
+        {{- include "notification-manager-worker-email.selectorLabels" . | nindent 8 }}
+    spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      serviceAccountName: {{ include "notification-manager.serviceAccountName" . }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      containers:
+        - name: {{ .Chart.Name }}-worker-email
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          args:
+            - {{ toString .Values.args.worker }}
+            - {{ toString .Values.args.workerSlaveSubCommand }}
+          env:
+            - name: NOTIFICATION_MANAGER_WORKER_NAME
+              value: nt-email
+            - name: NOTIFICATION_MANAGER_WORKER_TYPE
+              value: email
+            - name: NOTIFICATION_MANAGER_BINDING_KEY
+              value: nt-email
+            - name: NOTIFICATION_MANAGER_DEFAULT_QUEUE
+              value: nt-email
+            - name: NOTIFICATION_MANAGER_EXCHANGE
+              value: nt-email
+            - name: NOTIFICATION_MANAGER_DB_HOST
+              value: {{ .Values.env.dBHost }}
+            - name: NOTIFICATION_MANAGER_DB_NAME
+              value: {{ .Values.env.dBName }}
+            - name: NOTIFICATION_MANAGER_DB_USER
+              value: {{ .Values.env.dBUser }}
+            - name: NOTIFICATION_MANAGER_DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: database
+                  key: password
+            - name: NOTIFICATION_MANAGER_EMAIL_BASE_URL
+              value: mg.tradersconnect.com
+            - name: NOTIFICATION_MANAGER_EMAIL_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: mailgun
+                  key: apiKey
+            - name: NOTIFICATION_MANAGER_BROKER_URI
+              valueFrom:
+                secretKeyRef:
+                  name: machinery-notification
+                  key: brokerURI
+            - name: NOTIFICATION_MANAGER_DEFAULT_BACKEND
+              valueFrom:
+                secretKeyRef:
+                  name: machinery-notification
+                  key: resultBackend
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
